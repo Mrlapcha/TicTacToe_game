@@ -21,7 +21,7 @@
             padding: 0;
             color: #ffffff;
         }
-
+/* css code for text styling*/
         #letsPlay {
             font-size: 2em;
             animation: moveText 2s infinite; /* Apply the animation */
@@ -96,7 +96,7 @@
         let currentPlayer = 'X';
         let gameBoard = ['', '', '', '', '', '', '', '', ''];
         let gameActive = true;
-
+/* This part check the winner*/
         function checkWinner() {
             const winningCombinations = [
                 [0, 1, 2], [3, 4, 5], [6, 7, 8],  // Rows
@@ -113,7 +113,7 @@
 
             return null;
         }
-
+/* checks of the game is Tie or not*/
         function checkTie() {
             return gameBoard.every(cell => cell !== '');
         }
@@ -151,7 +151,7 @@
                 board.appendChild(cell);
             });
         }
-
+/* For reset the game*/
         function resetGame() {
             gameBoard = ['', '', '', '', '', '', '', '', ''];
             gameActive = true;
